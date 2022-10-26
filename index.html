@@ -1,12 +1,550 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<link rel="stylesheet" href="./css/index.css">
-		<script src="./js/index.js"></script>
-	</head>
-	<body>
-		<h1>这是测试页</h1>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小兔鲜</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <!-- 头部模块 -->
+    <header>
+        <!-- 快捷导航 -->
+        <div class="xtx-shortcut">
+            <div class="container">
+                <ul>
+                    <li><a href="">请先登录</a></li>
+                    <li class="sep"><span>|</span></li>
+                    <li><a href="">免费注册</a></li>
+                    <li class="sep"><span>|</span></li>
+                    <li><a href="">我的订单</a></li>
+                    <li class="sep"><span>|</span></li>
+                    <li><a href="">会员中心</a></li>
+                    <li class="sep"><span>|</span></li>
+                    <li><a href="">帮助中心</a></li>
+                    <li class="sep"><span>|</span></li>
+                    <li><a href="">在线客服</a></li>
+                    <li class="sep"><span>|</span></li>
+                    <li>
+                        <a href="">
+                            <i></i>
+                            手机版
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="xtx-main-nav container">
+            <!-- logo -->
+            <div class="logo">
+                <h1>
+                    <a href="#" title="小兔鲜">小兔鲜</a>
+                </h1>
+            </div>
+            <!-- nav -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">生鲜</a></li>
+                    <li><a href="#">美食</a></li>
+                    <li><a href="#">餐厨</a></li>
+                    <li><a href="#">电器</a></li>
+                    <li><a href="#">居家</a></li>
+                    <li><a href="#">洗护</a></li>
+                    <li><a href="#">孕婴</a></li>
+                    <li><a href="#">服装</a></li>
+                </ul>
+            </nav>
+            <!-- search -->
+            <div class="search">
+                <input type="text" placeholder="搜一搜">
+            </div>
+            <!-- car -->
+            <a class="car">
+                <i>2</i>
+            </a>
+        </div>
+    </header>
+
+    <!-- 首页入口模块 -->
+    <section class="xtx-entry">
+        <!-- 轮播模块 -->
+        <div class="container">
+            <div class="swiper">
+                <ul class="swiper-cont">
+                    <li>
+                        <a href="javascript:">
+                            <img src="./uploads/banner_1.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./uploads/banner_2.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./uploads/banner_3.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <!-- 左右两侧按钮 -->
+                <a href="javascript:" class="prev"></a>
+                <a href="javascript:" class="next"></a>
+                <!-- 小圆点 -->
+                <ul class="pagination">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </div>
+            <!-- 侧边栏 -->
+            <aside class="category">
+                <ul>
+                    <li>
+                        <a href="javascript:">生鲜</a>
+                        <a href="javascript:">水果</a>
+                        <a href="javascript:">蔬菜</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">美食</a>
+                        <a href="javascript:">面点</a>
+                        <a href="javascript:">干果</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">餐厨</a>
+                        <a href="javascript:">数码产品</a>
+                        <a href="javascript:">电器</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">床品</a>
+                        <a href="javascript:">四件套</a>
+                        <a href="javascript:">被枕</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">居家</a>
+                        <a href="javascript:">奶粉</a>
+                        <a href="javascript:">玩具</a>
+                        <a href="javascript:">辅食</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">洗护</a>
+                        <a href="javascript:">洗发</a>
+                        <a href="javascript:">洗护</a>
+                        <a href="javascript:">美妆</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">孕婴</a>
+                        <a href="javascript:">奶粉</a>
+                        <a href="javascript:">玩具</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">服饰</a>
+                        <a href="javascript:">女装</a>
+                        <a href="javascript:">男装</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">杂货</a>
+                        <a href="javascript:">户外</a>
+                        <a href="javascript:">图书</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">品牌</a>
+                        <a href="javascript:">品牌制造</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <!-- 新鲜好物模块 -->
+    <section class="xtx-new-goods container">
+        <div class="goods-hd">
+            <h3>
+                新鲜好物
+                <span>新鲜出炉 品质靠谱</span>
+            </h3>
+            <a href="">查看全部 > </a>
+        </div>
+        <div class="goods-list">
+            <ul>
+                <li>
+                    <a href="javascript:">
+                        <img src="./uploads/new_goods_1.jpg" alt="">
+                        <h4>睿米无线吸尘器F8</h4>
+                        <p>¥ <span>899</span></p>
+                        <i>新品</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <img src="./uploads/new_goods_2.jpg" alt="">
+                        <h4>智能环绕3D空调</h4>
+                        <p>¥ <span>1299</span></p>
+                        <i>新品</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <img src="./uploads/new_goods_3.jpg" alt="">
+                        <h4>广东软软糯米煲仔饭</h4>
+                        <p>¥ <span>129</span></p>
+                        <i>新品</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <img src="./uploads/new_goods_4.jpg" alt="">
+                        <h4>罗西机械智能手表</h4>
+                        <p>¥ <span>3399</span></p>
+                        <i>新品</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 人气模块 -->
+    <section class="xtx-new-goods container renqi">
+        <div class="goods-hd">
+            <h3>
+                新鲜好物
+                <span>新鲜出炉 品质靠谱</span>
+            </h3>
+            <a href="">查看全部 > </a>
+        </div>
+        <div class="goods-list">
+            <ul>
+                <li>
+                    <a href="javascript:">
+                        <img src="./uploads/popular_1.jpg" alt="">
+                        <h4>特惠推荐</h4>
+                        <p>¥ <span>899</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <img src="./uploads/popular_2.jpg" alt="">
+                        <h4>爆款推荐</h4>
+                        <p>¥ <span>1299</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <img src="./uploads/popular_3.jpg" alt="">
+                        <h4>场景使用一战买全</h4>
+                        <p>¥ <span>129</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        <img src="./uploads/popular_4.jpg" alt="">
+                        <h4>领卷中心</h4>
+                        <p>¥ <span>3399</span></p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 热门品牌模块 -->
+    <section class="xtx-hot-remen">
+        <div class="container">
+            <div class="goods-hd">
+                <h3>
+                    热门品牌
+                    <span>国际经典 品质保证</span>
+                </h3>
+                <ul class="arrow">
+                    <li><</li>
+                    <li>></li>
+                </ul>
+            </div>
+            <div class="remen-list">
+                <ul>
+                    <li>
+                        <img src="./uploads/brand_goods_1.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./uploads/brand_goods_2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./uploads/brand_goods_3.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./uploads/brand_goods_4.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./uploads/brand_goods_5.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 生鲜模块 -->
+    <section class="xtx-fresh-goods container">
+        <div class="goods-hd">
+            <h3>
+                生鲜
+            </h3>
+            <ul class="tab">
+                <li class="active">水果</li>
+                <li>蔬菜</li>
+                <li>肉禽蛋</li>
+                <li>裤装</li>
+                <li>衬衫</li>
+                <li>T恤</li>
+                <li>内衣</li>
+            </ul>
+            <a href="">查看全部 > </a>
+        </div>
+        <div class="fresh-content">
+            <div class="fresh-content-l">
+                <a href="javascript:">
+                    <img src="./uploads/fresh_goods_cover.png" alt="">
+                </a>
+            </div>
+            <div class="fresh-content-r">
+                <ul>
+                    <li>
+                        <a href="javascript">
+                            <img src="./uploads/fresh_goods_1.jpg" alt="">
+                            <h4>美威 智利原味三文鱼排 240g/袋 4片装 海鲜年货</h4>
+                            <p>￥<span>59</span></p>
+                        </a>
+                        <div class="more">
+                            <h3>找相似</h3>
+                            <a href="javascript:">发现更多 > </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript">
+                            <img src="./uploads/fresh_goods_2.jpg" alt="">
+                            <h4>美威 智利原味三文鱼排 240g/袋 4片装 海鲜年货</h4>
+                            <p>￥<span>59</span></p>
+                        </a>
+                        <div class="more">
+                            <h3>找相似</h3>
+                            <a href="javascript:">发现更多 > </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript">
+                            <img src="./uploads/fresh_goods_3.jpg" alt="">
+                            <h4>美威 智利原味三文鱼排 240g/袋 4片装 海鲜年货</h4>
+                            <p>￥<span>59</span></p>
+                        </a>
+                        <div class="more">
+                            <h3>找相似</h3>
+                            <a href="javascript:">发现更多 > </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript">
+                            <img src="./uploads/fresh_goods_4.jpg" alt="">
+                            <h4>美威 智利原味三文鱼排 240g/袋 4片装 海鲜年货</h4>
+                            <p>￥<span>59</span></p>
+                        </a>
+                        <div class="more">
+                            <h3>找相似</h3>
+                            <a href="javascript:">发现更多 > </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript">
+                            <img src="./uploads/fresh_goods_5.jpg" alt="">
+                            <h4>美威 智利原味三文鱼排 240g/袋 4片装 海鲜年货</h4>
+                            <p>￥<span>59</span></p>
+                        </a>
+                        <div class="more">
+                            <h3>找相似</h3>
+                            <a href="javascript:">发现更多 > </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript">
+                            <img src="./uploads/fresh_goods_6.jpg" alt="">
+                            <h4>美威 智利原味三文鱼排 240g/袋 4片装 海鲜年货</h4>
+                            <p>￥<span>59</span></p>
+                        </a>
+                        <div class="more">
+                            <h3>找相似</h3>
+                            <a href="javascript:">发现更多 > </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript">
+                            <img src="./uploads/fresh_goods_7.jpg" alt="">
+                            <h4>美威 智利原味三文鱼排 240g/袋 4片装 海鲜年货</h4>
+                            <p>￥<span>59</span></p>
+                        </a>
+                        <div class="more">
+                            <h3>找相似</h3>
+                            <a href="javascript:">发现更多 > </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript">
+                            <img src="./uploads/fresh_goods_8.jpg" alt="">
+                            <h4>美威 智利原味三文鱼排 240g/袋 4片装 海鲜年货</h4>
+                            <p>￥<span>59</span></p>
+                        </a>
+                        <div class="more">
+                            <h3>找相似</h3>
+                            <a href="javascript:">发现更多 > </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新专题模块 -->
+    <section class="news">
+        <div class="container">
+            <div class="goods-hd">
+                <h3>
+                    最新专题
+                </h3>
+                <a href="">查看全部 > </a>
+            </div>
+            <div class="news-list">
+                <ul>
+                    <li>
+                        <a href="javascript:">
+                            <div class="pic">
+                                <img src="./uploads/topic_goods_1.jpg" alt="">
+                                <div class="info">
+                                    <h4>不辜负自己</h4>
+                                    <p>餐厨起居洗护好物</p>
+                                    <span>￥29.9起</span>
+                                </div>
+                            </div>
+                        </a>
+                            <div class="news-b">
+                                <span>1299</span>
+                                <span>899</span>
+                                <span>1389</span>
+                            </div>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <div class="pic">
+                                <img src="./uploads/topic_goods_2.jpg" alt="">
+                                <div class="info">
+                                    <h4>不辜负自己</h4>
+                                    <p>餐厨起居洗护好物</p>
+                                    <span>￥29.9起</span>
+                                </div>
+                            </div>
+                        </a>
+                            <div class="news-b">
+                                <span>1299</span>
+                                <span>899</span>
+                                <span>1389</span>
+                            </div>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <div class="pic">
+                                <img src="./uploads/topic_goods_3.jpg" alt="">
+                                <div class="info">
+                                    <h4>不辜负自己</h4>
+                                    <p>餐厨起居洗护好物</p>
+                                    <span>￥29.9起</span>
+                                </div>
+                            </div>
+                        </a>
+                            <div class="news-b">
+                                <span>1299</span>
+                                <span>899</span>
+                                <span>1389</span>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部模块 -->
+    <footer>
+        <!-- 上盒子 -->
+        <div class="footer-t">
+            <div class="container">
+                <dl class="customer">
+                    <dt>客户服务</dt>
+                    <dd class="zaixian">
+                        <a href="#">
+                            <p>在线客服</p>
+                        </a>
+                    </dd>
+                    <dd class="wenti">
+                        <a href="#">
+                            <p>问题反馈</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl class="us">
+                    <dt>关注我们</dt>
+                    <dd class="gongzhong">
+                        <a href="#">
+                            <p>公众号</p>
+                        </a>
+                    </dd>
+                    <dd class="weibo">
+                        <a href="#">
+                            <p>微博</p>
+                        </a>
+                    </dd>
+                </dl>
+                <dl class="download">
+                    <dt>下载App</dt>
+                    <dd class="qrcode">
+                        <img src="./uploads/qrcode.png" alt="">
+                    </dd>
+                    <dd class="down">
+                        <p>扫描二维码</p>
+                        <p>立即下载app</p>
+                        <a href="#">下载页面</a>
+                    </dd>
+                </dl>
+                <dl class="hotline">
+                    <dt>服务热线</dt>
+                    <dd>
+                        <p>400-0000-000</p>
+                        <p>周一至周日 8:00-18:00</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!-- 下盒子 -->
+        <div class="footer-b">
+            <div class="xtx-service">
+                <a>价格亲民</a>
+                <a>物流便捷</a>
+                <a>品质新鲜</a>
+            </div>
+            <div class="xtx-copyright">
+                <p>
+                    <a href="JavaScript:">关于我们</a> |
+                    <a href="JavaScript:">帮助中心</a> |
+                    <a href="JavaScript:">售后服务</a> |
+                    <a href="JavaScript:">配送与验收</a> |
+                    <a href="JavaScript:">商务合作</a> |
+                    <a href="JavaScript:">搜索推荐</a> |
+                    <a href="JavaScript:">友情链接</a>
+                </p>
+                <p>CopyRight @ 小兔鲜儿</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
